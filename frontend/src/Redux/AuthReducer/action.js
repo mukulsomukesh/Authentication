@@ -12,7 +12,7 @@ const signUp = (userInput) => async (dispatch) => {
   try {
 
     // make post request
-    const res = await axios.post(`${END_POINT}/user/signup`, userInput);
+    const res = await axios.post(`${END_POINT}/api/auth/signup`, userInput);
 
     // dispaltch signup success
     dispatch({ type: types.USER_SIGNUP_SUCCESS, payload: res.data });
@@ -34,7 +34,7 @@ const login = (userInput) => async (dispatch) => {
   try {
 
     // make post request
-    const res = await axios.post(`${END_POINT}/user/login`, userInput);
+    const res = await axios.post(`${END_POINT}/api/auth/login`, userInput);
 
     // dispatch login success
     dispatch({ type: types.USER_LOGIN_SUCCESS, payload: res.data });
