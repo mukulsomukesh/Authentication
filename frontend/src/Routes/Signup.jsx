@@ -97,7 +97,7 @@ export default function Signup() {
         <CustomButton onClick={handelCustomButtonClick} isProcessing={isSignupProcess} label="Signup" />
 
         {/* redirect to login page */}
-        <p className='mt-5' > Already Have Account, <span onClick={() => { navigate("/login") }} className='font-bold text-primary-200 cursor-pointer ' >Login</span> </p>
+        <p className='mt-4' > Already Have Account, <span onClick={() => { navigate("/login") }} className='font-bold text-primary-200 cursor-pointer ' >Login</span> </p>
 
       </div>
 

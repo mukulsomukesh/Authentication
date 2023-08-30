@@ -76,7 +76,6 @@ export default function Login() {
         {/* heading */}
         <p className="text-center mb-4 text-2xl font-bold ">Login to continue.</p>
 
-
         {/* email input */}
         <CustomInput label={'Email'} type={"text"} value={userInput.email} onChange={handelCustomInputChange} placeholder={'Enter Email!'} icon={<IoPersonOutline />} />
 
@@ -87,7 +86,7 @@ export default function Login() {
         <CustomButton onClick={handelCustomButtonClick} isProcessing={isLoginProcess} label="Login" />
 
         {/* redirect to login page */}
-        <p className='mt-5' > Don't Have Account, <span onClick={() => { navigate("/signup") }} className='font-bold text-primary-200 cursor-pointer ' >Signup</span> </p>
+        <p className='mt-4' > Don't Have Account, <span onClick={() => { navigate("/signup") }} className='font-bold text-primary-200 cursor-pointer ' >Signup</span> </p>
 
       </div>
 
